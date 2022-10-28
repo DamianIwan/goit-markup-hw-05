@@ -733,41 +733,52 @@ color: #FFFFFF;
 
   }
   .backdrop{
+    position:fixed;
+    top: 0;
+    left: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-
-    position: relative;
     width: 100vw;
     height: 100vh;
-    background-color:rgba(0, 0, 0, 0.2); ;
-  }
-  .modal{
-    z-index: 3;
+    background-color:rgba(0, 0, 0, 0.2);
+    transition-duration: 2s;
+    
+    
+    
+
+    
+}
+.modal{
     position:absolute;
     width: 582px;
     height: 581px;
     background-color:var(--white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 4px;
-  }
-  .is-hidden{
+    border-radius: 4px;
+}
+.is-hidden{
+    
+    transform: translateX(-100%);
+    transition-duration: 2s;
     opacity:0;
     visibility: hidden;
     pointer-events: none;
   }
 .close-button{
-    position: absolute;
+    position:absolute;
     right: 1%;
     top: 1%;
     background-color: var(--white-color);
+    background-image: url(../images/close-button.svg);
+    background-repeat: no-repeat;
+    background-position:center;
     width: 30px;
     height: 30px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     cursor: pointer;
 }
-    
 
     
     
