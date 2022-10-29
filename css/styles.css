@@ -97,6 +97,9 @@ font-weight: 500;
 font-size: 14px;
 line-height: 1.14;
 letter-spacing: 0.02em;
+transition-property: color;
+transition-duration: 250ms;
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-footer{
     text-decoration: none; 
@@ -115,19 +118,14 @@ letter-spacing: 0.02em;
 
 .contact:hover{
     text-decoration: none;
-    
-    
     color:var(--blue-color);
-    
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     --color4:var(--blue-color);
     text-decoration: none;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   
 
 }
 .contact:focus{
@@ -266,7 +264,7 @@ color: var(--black-color);
 cursor: pointer;
 border-radius: 4px;
 background: #F5F4FA;
-transition: background-color 250ms;color: 250ms;border-bottom: 250ms;box-shadow: 250ms;
+transition: background-color 250ms;color: 2250ms;border-bottom: 2250ms;box-shadow: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); 
 
 
@@ -600,14 +598,17 @@ border-radius: 0px 0px 4px 4px;
     align-items:center ;
     gap: 10px;
     cursor: pointer;
+    transition: background-color 250ms;
+    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
 }
 .background-socialmedia-icon:hover{
     background-color:var(--blue-color); border-radius: 50%;
     --color2:var(--white-color);
     --color3:var(--white-color);
     --color4:var(--white-color);
-    transition: background-color 250ms;
-    transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);
+    
+    
+   
 }
 
     
