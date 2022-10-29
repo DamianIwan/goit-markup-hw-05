@@ -91,6 +91,8 @@ line-height: 1.19;
     letter-spacing: 0.02em;
 }
 .contact{
+display: flex;
+ gap:5px;
 text-decoration: none; 
 color:var(--grey-color);
 font-weight: 500;
@@ -745,7 +747,7 @@ color: #FFFFFF;
     height: 100vh;
     background-color:rgba(0, 0, 0, 0.2);
     transition-property: transform,visibility,opacity;
-    transition-duration: 0,5s;
+    transition-duration: 0.5s;
     
     
     
